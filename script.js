@@ -1,13 +1,11 @@
 const display = document.getElementById("display");
+    function addToResult(value) {
+        document.getElementById('result').value += value;
+    }
 
-function appendToDisplay(input){
-display.value += input;
-}
-
-
-function clearDisplay(){
-display.value = "";
-}
+    function clearResult() {
+        document.getElementById('result').value = '';
+    }
 
 function calculate(){
 try{
